@@ -31,6 +31,7 @@ test('show list shows data when reendered', ()=>{
     expect(queryAllByTestId ('card')).toStrictEqual([]);
     expect(queryAllByTestId('card')).toHaveLength(0)
     expect(queryAllByTestId('episode-list')).toHaveLength(1)
+    // expect(queryAllByTestId('episode-list')).toStrictEqual({})
     
 
     rerender(<Episodes error="" episodes={season}/>)
